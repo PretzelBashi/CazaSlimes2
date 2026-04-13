@@ -55,7 +55,7 @@ public class Camara : MonoBehaviour
             {
                 camaraInterior.GetComponent<Camera>().fieldOfView = 60;
                 rotacion.y = -5.7f;
-                camara.transform.position = new Vector3(transform.position.x + 1.36f, transform.position.y, transform.position.z + -2.15f);
+                camaraInterior.transform.position = new Vector3(transform.position.x + 1.36f, transform.position.y, transform.position.z + -2.15f);
                 cambioDeCamara = false;
             }
 
@@ -80,7 +80,7 @@ public class Camara : MonoBehaviour
             if (cambioDeCamara)
             {
                 camaraInterior.GetComponent<Camera>().fieldOfView = 60;
-                camara.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                camaraInterior.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
                 cambioDeCamara = false;
 
                 Renderer[] renders = jugador.GetComponentsInChildren<Renderer>(true);
